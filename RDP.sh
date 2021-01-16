@@ -24,6 +24,7 @@ sudo apt install nautilus nano vim net-tools iproute2 gedit neofetch -y
 printf "sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target " >&2
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 sudo adduser ALOK chrome-remote-desktop
+sudo apt -y install icedtea-netx icedtea-plugin
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2

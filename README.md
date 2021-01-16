@@ -2,7 +2,7 @@
 Hướng dẫn remote vào colab server.
 code:
 ```bash
-!wget https://raw.githubusercontent.com/nguyenvanhuy0612/huy111/master/RDP.sh &> /dev/null
+!wget https://raw.githubusercontent.com/computerline1z/ColabRemote/main/RDP.sh &> /dev/null
 !chmod +x RDP.sh
 !./RDP.sh
 ```

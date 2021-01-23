@@ -1,11 +1,11 @@
-# wget https://raw.githubusercontent.com/alok676875/RDP/main/RDP.sh &> /dev/null
+# wget https://raw.githubusercontent.com/Administrator676875/RDP/main/RDP.sh &> /dev/null
 
 #! /bin/bash
-printf "Installing RDP Be Patience... " >&2
+printf "Dang tien hanh cai RDP. Vui long cho doi trong giay lat ... " >&2
 {
-sudo useradd -m ALOK
-sudo adduser ALOK sudo
-echo 'ALOK:8426' | sudo chpasswd
+sudo useradd -m Administrator
+sudo adduser Administrator sudo
+echo 'Administrator:8943216' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -23,18 +23,18 @@ printf "apt install nautilus nano vim net-tools iproute2 gedit neofetch " >&2
 sudo apt install nautilus nano vim net-tools iproute2 gedit neofetch -y
 printf "sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target " >&2
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
-sudo adduser ALOK chrome-remote-desktop
+sudo adduser Administrator chrome-remote-desktop
 sudo apt -y install icedtea-netx icedtea-plugin
 } &> /dev/null &&
-printf "\nSetup Complete " >&2 ||
-printf "\nError Occured " >&2
-printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
-read -p "Paste Here: " CRP
-su - ALOK -c """$CRP"""
-printf 'Check https://remotedesktop.google.com/access/ \n\n'
+printf "\nCai dat hoang tat " >&2 ||
+printf "\nCo loi xay ra " >&2
+printf '\nTruy cap vao https://remotedesktop.google.com/headless  Sao chep lenh cua Debian Linux va dan xuong ben duoi\n'
+read -p "Dan vao day: " CRP
+su - Administrator -c """$CRP"""
+printf 'Truy cap vao https://remotedesktop.google.com/access/ de lay mat khau dang nhap\n\n'
 if sudo apt-get upgrade &> /dev/null
 then
-    printf "\n\nUpgrade Completed " >&2
+    printf "\n\nCap nhat hoan tat " >&2
 else
-    printf "\n\nError Occured " >&2
+    printf "\n\nXay ra loi " >&2
 fi

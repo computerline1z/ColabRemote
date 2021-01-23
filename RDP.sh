@@ -28,7 +28,7 @@ sudo apt -y install icedtea-netx icedtea-plugin
 } &> /dev/null &&
 printf "\nDa cai dat xong cac goi can thiet " >&2 ||
 printf "\nCo loi xay ra " >&2
-printf '\nTruy cap vao https://remotedesktop.google.com/headless.\n- Nhan Next de den buoc xac thuc Gmail.\n- Tien hanh xac thuc.\n- Sao chep lenh cua Debian Linux va dan xuong ben duoi.\n- Sau do nhap 2 lan ma PIN de dat mat khau phien dang nhap.\n'
+printf '\nTruy cap vao https://remotedesktop.google.com/headless.\n- Nhan Begin -> Next -> Authorize de den buoc xac thuc Gmail.\n- Tien hanh xac thuc.\n- Sao chep lenh cua Debian Linux va dan xuong ben duoi.\n- Nhap 2 lan ma PIN de dat mat khau phien dang nhap.\n'
 read -p "Dan lenh vao day va nhan Enter: " CRP
 su - Administrator -c """$CRP"""
 printf 'Truy cap vao https://remotedesktop.google.com/access/ de remote vao may colab\n\n'
